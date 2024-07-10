@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "no-more-copper",
+	"version": "${version}",
+	"name": "No More Copper",
+	"description": "Stops copper ore generating!",
+	"authors": [
+		"herrobriam"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/no-more-copper",
+		"sources": "https://github.com/herrobriam/no-more-copper"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/no-more-copper/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.herrobriam.nocopper.NoMoreCopper"
+		],
+		"fabric-datagen": [
+			"net.herrobriam.nocopper.NoMoreCopperDataGenerator"
+		]
+	},
+	"mixins": [
+		"no-more-copper.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": ">=1.17",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
